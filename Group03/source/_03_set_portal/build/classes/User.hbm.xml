@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+              
+              <hibernate-mapping>
+              
+                <class name="login.User" table="user" catalog="group03">
+                
+                    <id name="id" column="userid" type="int">
+                        <generator class="increment"/>
+                    </id>
+                    <property name="levelId" column="level_id" type="string"/>
+              		<property name="userName" column="username" type="string"/>
+              		<property name="email" column="email" type="string"/>
+              		<property name="tel" column="tel" type="string"/>
+              		<property name="address" column="address" type="string"/>
+              		<property name="postcode" column="postcode" type="string"/>
+              		<property name="companyName" column="company" type="string"/>
+                </class>
+                
+              </hibernate-mapping>

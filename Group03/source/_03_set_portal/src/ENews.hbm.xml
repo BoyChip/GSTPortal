@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+              
+              <hibernate-mapping>
+              
+                <class name="nguyethuynh.ENews" table="e_news" catalog="group03">
+                
+                    <id name="id" column="e_newsid" type="int">
+                        <generator class="increment"/>
+                    </id>
+                    
+              		<property name="pushlishDate" column="pushlishdate" type="date"/>
+              		<property name="endDate" column="enddate" type="date"/>
+              		<property name="titleE" column="titlee" type="string"/>
+              		<property name="ContentE" column="contente" type="string"/>
+              		<property name="titleM" column="titleM" type="string"/>
+              		<property name="contentM" column="titlem" type="string"/>
+                </class>
+                
+              </hibernate-mapping>
